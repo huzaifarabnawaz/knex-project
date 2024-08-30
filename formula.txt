@@ -1,0 +1,7 @@
+1)use this code in the terminal using for migrtion
+npx knex migrate:make again
+
+
+
+2)registerd table in posgesql using this comman 
+    npx knex migrate:latest
