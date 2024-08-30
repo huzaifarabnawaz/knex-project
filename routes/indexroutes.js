@@ -1,10 +1,9 @@
 const express=require("express")
+const personControls=require("../controller/person")
 const router=express.Router()
 
 
-const controlerfile=require('../controller/person')
-
-router.post("/postapi",)
+router.post("/postapi",personControls.createPerson)
 
 
 module.exports=router
