@@ -7,7 +7,7 @@ const { table } = require("../dbconnection");
 exports.up = function(knex) {
     return knex.schema.createTable('person',table=>{
 
-        table.increments('id')
+        table.increments('id').init.primary()
         table.string('email').notNullable().unique()
         table.string('name').notNullable().unique()
         table.timestamp(true,true)
@@ -18,6 +18,6 @@ exports.up = function(knex) {
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.down = function(knex) {
+exports.down = function(knex) {postgresql
   
 };
