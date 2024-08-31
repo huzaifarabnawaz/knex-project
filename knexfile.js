@@ -5,14 +5,19 @@
  */
 module.exports = {
 
-
-
   development: {
+    client: 'sqlite3',
+    connection: {
+      filename: './dev.sqlite3'
+    }
+  },
+
+  staging: {
     client: 'postgresql',
     connection: {
-      database: 'testingsql',
-      user:     'postgres',
-      password: 'postgres',
+      database: 'testing api',
+      user:'huzaifa',
+      password: 'postgres'
     },
     pool: {
       min: 2,

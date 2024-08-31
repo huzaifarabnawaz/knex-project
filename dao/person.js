@@ -20,6 +20,10 @@
 
 
 
+
+
+// this is chat gpt data 
+
 const db = require("../dbconnection");
 const { person, personalservice } = require("../servic/person");
 
